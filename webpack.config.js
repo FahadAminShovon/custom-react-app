@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
   return {
     output: {
       path: path.resolve(__dirname, './dist'),
-      filename: '[name].[contenthash].js',
+      filename: 'main.js',
       clean: true,
     },
     devServer: {
@@ -34,7 +34,7 @@ module.exports = (env, argv) => {
         template: path.join(__dirname, 'public', 'index.html'),
       }),
       new MiniCSSExtractPlugin({
-        filename: '[name].[contenthash].css',
+        filename: 'main.css',
       }),
     ],
   };
