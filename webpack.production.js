@@ -9,10 +9,6 @@ module.exports = (env, argv) => {
       filename: 'main.js',
       clean: true,
     },
-    devServer: {
-      port: env && env.PORT ? Number(env.PORT) : 3000,
-      open: true,
-    },
     resolve: {
       extensions: ['.js', '.jsx'],
     },
